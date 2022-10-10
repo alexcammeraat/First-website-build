@@ -87,3 +87,40 @@ transition: margin 0.15s;
     }
     
 }
+
+/* Badges */
+
+/* structure */
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+
+/* badge Skin seperated by two -- hyphens */
+.badge--primary {
+    background: var(--color-Primary);
+    color: #fff;
+}
+
+.badge--secondary {
+    background: var(--color-Secondary);
+    color: #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+    }
+    .badge--small {
+        font-size: 1.2rem;
+    }
+    
+}
