@@ -132,6 +132,28 @@ transition: margin 0.15s;
     
 }
 
+/* Icons */
+/* structure */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+/* skin */
+.icon--primary {
+    fill: var(--color-Primary); /* fill only for SVGs*/
+} 
+/* Single hyphen used to separte words */
+.icon-container{
+    background: #F3F9FA;
+    width: 64px;
+    height: 64px;
+    border-radius: 100% ;
+    display: inline-flex; /*TO CENTER THE ICON IN THE CIRCLE*/
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* lists */
 /* structure VVV */
 .list{
