@@ -366,3 +366,21 @@ display: flex; /* used to make search button go to otherside of input field box*
     }
 
 }
+
+/* Media */
+
+.media {
+    display: flex; /*used to Make header and Text go beside the image*/
+}
+
+.media__title{
+    margin-top: 0;
+}
+
+.media__body{
+    margin: 0 2rem;
+}
+
+.media__image{
+    margin-top: 1rem;
+}
