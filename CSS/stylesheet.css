@@ -143,6 +143,13 @@ transition: margin 0.15s;
 .icon--primary {
     fill: var(--color-Primary); /* fill only for SVGs*/
 } 
+.icon--small {
+    width: 30px;
+    height: 30px;
+    }
+.icon--white {
+    fill: #fff;
+}
 /* Single hyphen used to separte words */
 .icon-container{
     background: #F3F9FA;
@@ -152,7 +159,10 @@ transition: margin 0.15s;
     display: inline-flex; /*TO CENTER THE ICON IN THE CIRCLE*/
     justify-content: center;
     align-items: center;
+}
 
+.icon-container--accent{
+    background: var(--color-Accent);
 }
 
 /* lists */
@@ -267,7 +277,7 @@ color: #cdcbd7;
     }
 }
 
-/* input Group */
+/*? input Group */
 
 .input-group{
 border: 1px solid var(--color-border);
@@ -286,7 +296,7 @@ display: flex; /* used to make search button go to otherside of input field box*
     margin: 4px;
 }
 
-/* Cards */
+/*? Cards */
 
 .card {
     border-radius: 7px;
@@ -310,7 +320,7 @@ display: flex; /* used to make search button go to otherside of input field box*
     background: #02cdf1 ;
 }
 
-/* plan */
+/*? plan */
 .plan__name {
     margin: 0 ;
     color: #fff;
@@ -368,7 +378,7 @@ display: flex; /* used to make search button go to otherside of input field box*
 
 }
 
-/* Media */
+/*? Media */
 
 .media {
     display: flex; /*used to Make header and Text go beside the image*/
@@ -386,7 +396,7 @@ display: flex; /* used to make search button go to otherside of input field box*
     margin-top: 1rem;
 }
 
-/* Quotes */
+/*? Quotes */
 
 .quote {
     font-size: 3rem;
@@ -435,7 +445,7 @@ bottom: 10px;
     }
 }
 
-/* Grid */
+/*? Grid */
 
 .grid {
     display: grid;
@@ -451,4 +461,35 @@ bottom: 10px;
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* testimonials */
+
+.testimonial{
+    pad: 3rem ;
+
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image>img  /*! This is used so that we can get both the image and icon to be relative positioned */
+{ 
+    width: 100%;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px ) {
+    .testimonial .quote,  
+    .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+    .testimonial .quote {
+        margin-left: 6rem;
+    }
+    
 }
