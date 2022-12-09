@@ -493,3 +493,48 @@ bottom: 10px;
     }
     
 }
+
+/* CallOUT */
+.callout{
+    padding: 4rem ;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-Primary);
+    color: #fff;
+}
+.callout__heading{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+
+/* targetting buttons inside a callout component*/
+.callout .btn {
+    justify-self: center; /*Horiozontily*/
+    align-self: center; /*Vertically */
+}
+.callout__content{
+    text-align: center;
+}
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+@media screen and (min-width:768px) {
+  .callout .grid--1x2{
+    grid-template-columns: 1fr auto;
+  }
+  
+  
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn {
+        justify-self: start; /* to move the button closer to the text so that it isnt in the center in empty space */
+        margin: 0 3rem;
+    }
+}
