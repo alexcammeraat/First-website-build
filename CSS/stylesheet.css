@@ -542,7 +542,7 @@ bottom: 10px;
 /*! collapsible */
 
 .collapsible__header{
-    display: flex;
+    display: flex; /* makes sure the title and icon are beside eachother */
     justify-content: space-between; /*this pushes the items to the edges of the container and adds space between them*/
 }
 
@@ -572,4 +572,42 @@ bottom: 10px;
 .collapsible--expanded .collapsible__content{
     max-height: 100vh;
 opacity: 1;
+}
+
+/* block */
+.block{
+    --padding-vertical: 6rem; /* a veriable that is avalible only for "block elements" and there children. */
+    padding: var(--padding-vertical) 2rem;
+   
+}
+.block__header{ /* if we didnt make a seprate class, then everything under the block element would be center aligned even cards etc.*/
+    text-align: center;
+}
+.block__heading{
+    margin-top: 0;
+}
+
+.block--dark {
+    background: #000;
+    color: #7b858b;
+}
+
+.block--dark .block__heading{
+    color: #fff;
+} 
+
+.block--skewed-right{
+    padding-bottom: calc(var(--padding-vertical) + 4rem); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block--skewed-left{
+    padding-bottom: calc(var(--padding-vertical) + 4rem); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+/* Width of page contraint */
+.container{
+    max-width: 1140px;
+    margin: 0 auto; /*centers the block "0" px for vertial margin and "auto" for horizontal margin*/ 
 }
