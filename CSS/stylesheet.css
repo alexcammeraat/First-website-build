@@ -325,11 +325,18 @@ display: flex; /* used to make search button go to otherside of input field box*
     background: var(--color-Secondary);
     color: #fff;
 }
+.card--primary .badge--primary {
+    background: #123de4;
+}
 .card--secondary .badge--secondary {
     background: #02cdf1 ;
 }
 
 /*? plan */
+
+.plan {
+    transition: transform .2s ease-out;
+}
 .plan__name {
     margin: 0 ;
     color: #fff;
@@ -358,7 +365,9 @@ display: flex; /* used to make search button go to otherside of input field box*
 .plan .list__item{
     margin-bottom: 2rem;
 }
-
+.plan--popular {
+    transform: scale(1.1);
+}
 .plan--popular .card__header {
     position: relative;
 }
@@ -371,6 +380,13 @@ display: flex; /* used to make search button go to otherside of input field box*
     right: 5%;
 }
 
+.plan:hover{
+transform: scale(1.05);
+}
+
+.plan--popular:hover{
+    transform: scale(1.15);
+    }
 @media screen and (min-width: 1024px) {
     .plan__name{
         font-size: 1.4rem;
@@ -731,4 +747,15 @@ max-width: 670px;
     .block-domain__prices{
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+/* plan block */
+
+.block-plan .grid{
+gap: 8rem 4rem;
+}
+
+.block-plan .card {
+    max-width: 500px;
+    margin: 0 auto;
 }
