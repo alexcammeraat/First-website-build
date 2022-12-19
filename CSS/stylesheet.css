@@ -759,3 +759,16 @@ gap: 8rem 4rem;
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* features (media_block) */
+.feature{
+    gap: 4rem 2rem; /*gap: (1st: 4rem) for rows, (2nd: 2rem) for coloums.*/
+}
+
+.feature__heading{
+    margin: 1rem 0;
+}
+
+.feature__image{
+    width: 100%;
+}
