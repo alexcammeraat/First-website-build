@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 /* typography */
+::selection{
+    background: var(--color-Primary); /*used to make change  highlighted areas to easy readable text.*/
+    color: #fff;
+}
 html {
     font-size: 62.5%;
 }
@@ -407,6 +411,7 @@ transform: scale(1.05);
 
 .media {
     display: flex; /*used to Make header and Text go beside the image*/
+    margin-bottom: 4rem;
 }
 
 .media__title{
@@ -626,12 +631,12 @@ opacity: 1;
 
 .block--skewed-right{
     padding-bottom: calc(var(--padding-vertical) + 4rem); 
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left{
     padding-bottom: calc(var(--padding-vertical) + 4rem); 
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 /* Width of page contraint */
@@ -789,7 +794,24 @@ gap: 8rem 4rem;
 
 /* Showcase Block */
 
-.block-showcase__image{
+.block-showcase__image > img {
     width: 100%;
 
+}
+
+.media__objects{
+    margin-top: 8rem;
+}
+
+@media screen and (min-width:768px) {
+   .block-showcase .grid {
+grid-template-columns: 50% 50%;
+   }
+    .block-showcase__image{
+        justify-self: end;
+    }
+    .block-showcase__image > img {
+        width: auto;
+        max-width: 700px;
+    }
 }
