@@ -617,7 +617,10 @@ opacity: 1;
     color: #7b858b;
 }
 
-.block--dark .block__heading{
+.block--dark h1,
+.block--dark h2,
+.block--dark h3
+{
     color: #fff;
 } 
 
@@ -782,4 +785,11 @@ gap: 8rem 4rem;
     .feature:nth-of-type(even) .feature__content{
         order: 2;
     }
+}
+
+/* Showcase Block */
+
+.block-showcase__image{
+    width: 100%;
+
 }
