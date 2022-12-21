@@ -494,9 +494,8 @@ bottom: 10px;
 }
 
 /* testimonials */
-
 .testimonial{
-    pad: 3rem ;
+    padding: 3rem ;
 
 }
 .testimonial__image{
@@ -612,6 +611,7 @@ opacity: 1;
 }
 .block__header{ /* if we didnt make a seprate class, then everything under the block element would be center aligned even cards etc.*/
     text-align: center;
+    margin-bottom: 4rem;  /*we add this so we dont need to repeat the margin bottom to every Header in every block*/
 }
 .block__heading{
     margin-top: 0;
