@@ -15,54 +15,84 @@
     <link rel="stylesheet" href="CSS/stylesheet.css" />
   </head>
   <body>
-    <section class="block">
-  <header class="block__header">
-    <h2> What our customers are saying</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit facere eius, sed enim natus sunt repellat quia commodi quos maiores, sapiente id explicabo labore esse exercitationem eos iure nostrum?20</p>
-  </header>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <!-- use section to make it more symantic as we have multiple sections in our grid -->
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">item 1</h2>
+            <img class="collapsible__chevron" src="/Images/chevron.svg" />
+          </header>
 
-  <div class="container">
+          <div class="collapsible__content">
+            <ul>
+              <li><a href="#">Website Hosting</a></li>
+              <li><a href="#">Free automated wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+             </ul>
+          </div>
+        </section>
 
-    <div class="card testimonial">
-      <div class=" grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="Images/testimonial.jpg" alt="A image of a smiling customer"/>
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        
-        <div>
-      <blockquote class="quote">
-        <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quidem numquam odit beatae a officiis dicta itaque, debitis incidunt illo.</p>
-       
-        <footer>
-          <div class="media">
-            <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                    <use xlink:href="images/sprite.svg#line"></use>
-                  </svg>
-            </div>
-            <div class="media__body">
-                <h3 class="media__title quote__author">Sean Doyle</h3>
-                <p class="quote__company">Sean Doyles Windows</p>
-            </div>
-            </div>
-        </footer>
-      </blockquote>
-      
-        </div>
+        <section class="collapsible footer__section">
+          <!-- use section to make it more symantic as we have multiple sections in our grid -->
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">item 2</h2>
+            <img class="collapsible__chevron" src="/Images/chevron.svg" />
+          </header>
+
+          <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed a
+            id facere soluta ullam ea voluptatem aliquam unde excepturi!
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <!-- use section to make it more symantic as we have multiple sections in our grid -->
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">item 3</h2>
+            <img class="collapsible__chevron" src="/Images/chevron.svg" />
+          </header>
+
+          <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed a
+            id facere soluta ullam ea voluptatem aliquam unde excepturi!
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <!-- use section to make it more symantic as we have multiple sections in our grid -->
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">item 4</h2>
+            <img class="collapsible__chevron" src="/Images/chevron.svg" />
+          </header>
+
+          <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed a
+            id facere soluta ullam ea voluptatem aliquam unde excepturi!
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <!-- use section to make it more symantic as we have multiple sections in our grid -->
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">item 5</h2>
+            <img class="collapsible__chevron" src="/Images/chevron.svg" />
+          </header>
+
+          <div class="collapsible__content">
+         <ul>
+          <li><a href="#">Website Hosting</a></li>
+          <li><a href="#">Free automated wordpress</a></li>
+          <li><a href="#">Migrations</a></li>
+         </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <img src="Images/logo.svg" alt="">
+          <p class="footer__copyright">Copyright 2022 Alex cammeraat</p>
+        </section>
       </div>
-      </div>
-
-
-
-  </div>
-
- 
-</section>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
